@@ -45,4 +45,3 @@ class MultiheadAttention(nn.Module):
         attention = F.softmax(scaled, dim=-1)
         values = torch.matmul(attention, v)
         return values, attention
-
